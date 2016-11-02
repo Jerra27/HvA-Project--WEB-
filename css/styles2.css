@@ -1,0 +1,129 @@
+/* verhalen */
+@font-face {
+    font-family: 'Transavia_Sans';
+    src: url("./fonts/Nexa_Free_Light-webfont.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Transavia_xbold';
+    src: url("./fonts/Nexa_Free_Bold-webfont.ttf");
+    font-weight: 600;
+}
+/* neerslachtig */
+.mobile {
+display: block;}
+
+.tablet {
+    display: none; }
+
+.desktop {
+display: none;
+}
+
+.verward {
+display: block;}
+.verwart {
+display: none;
+}
+
+.verwarde  {
+display: none;
+}
+
+.mobile13 {
+display: block;
+}
+
+.ipad13 {
+display: none;
+}
+
+.desktop13 {
+display: none;
+}
+
+@media only screen and (min-width: 40em) {
+.mobile {
+display: none;
+}
+    
+.tablet {
+display: block; 
+}
+
+.desktop {
+display: none;
+}
+
+.mobile13 {
+display: none;
+}
+
+.ipad13 {
+display: block;
+}
+
+.desktop13 {
+display: none;
+}
+@media only screen and (min-width: 50em) {
+
+.mobile {
+display: none;}
+
+.tablet {
+    display: none; }
+
+.desktop {
+display: block;
+}
+    
+.mobile13 {
+display: none;
+}
+
+.ipad13 {
+display: none;
+}
+
+.desktop13 {
+display: block;
+}
+    }
+    
+/* === einde neerslachtig === */
+    
+/* verwarde man */
+    
+.verward {
+display: block;
+}
+
+
+@media only screen and (min-width: 38em) {
+.verward {
+display: none;}
+
+.verwart {
+    display: block; }
+
+.verwarde{
+display: none;
+}
+    }
+
+@media only screen and (min-width: 50em) {
+
+.verward {
+display: none;
+    }
+
+.verwart {
+    display: none; 
+    }
+
+.verwarde {
+display: block;
+}
+    }

@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Transavia_Sans';
+    src: url("../fonts/Nexa_Free_Light-webfont.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Transavia_xbold';
+    src: url("../fonts/Nexa_Free_Bold-webfont.ttf");
+    font-weight: 600;
+}
+
+
+body {
+    background-image: url(thailand.jpg);
+    background-repeat: repeat-y;
+}
+
+img {
+width: 4em;
+margin-left: 8.5em;
+}
+
+h1 {
+font-family: 'Transavia_xbold','Roboto';
+color: #00d66c;}
+
+.wachtwoord {
+font-family: 'Transavia_Sans','Roboto';
+font-size: 0.7em;
+color: #838281;
+margin-top: 0;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    z-index: 1;
+    background: (255, 255,255,.7);
+    margin: auto;
+    max-width: 16em;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 0.75rem;
+    background-color: white;
+}
+
+.form input {
+    font-family: 'Transavia_Sans','Roboto';
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 0.75rem;
+    border: .0625rem solid #2800a0;
+}
+
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #00d66c;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    font-family: 'Nexa Bold';
+    border-radius: 0.75rem;
+    -webkit-transform: scale(1.13, 1.13);
+    transform: scale(1.13, 1.13);
+     transition: background-color 0.5s ease;
+    
+}
+
+
+input:focus {
+    border: 0;
+border-bottom: 3px solid #00d66c;
+transition: 1.5s
+    
+}
+
+.form button:hover {
+background-color: #ff3268;}
+   
+}
+a:focus {
+color: #ff3268;
+}
+
+a:hover {
+color: #00d66c;
+}
+
+
+input:focus{
+-webkit-transform: scale(1.01, 1.01);
+transform: scale(1.13, 1.13);
+background-color: #f7f7f7;
+}
+
+button:hover {
+transition: all 0.9s ease 0s;
+color: #2800a0;
+cursor: pointer;
+}
+input[type=submit] {
+    background-color: #ff3368;
+    color: white;
+    font-family: 'Transavia_xbold','Roboto';
+    box-shadow: 0px 3px 0px #ca2b53;
+    width: 7.3em;
+    height: 3.2em;
+    border: 0.0625em solid rgba(0, 0, 0, 0.1);
+    font-family: "Transavia_xbold", 
+    font-size: 1em;
+    margin-right: 1em;
+    text-indent: .3em;
+    outline: none;
+    border-radius: 1.75em;
+}
+.message {
+    font-family: 'Transavia_Sans','Roboto';
+    color: #ff3268;
+    width: 17em;
+}
+@media only screen and (min-width: 48em) {
+    img {
+    margin-left: 36em;
+    margin-top: 4em;
+    position: absolute;
+    width: 10em;}   
+}
+
+
+@media only screen and (min-width: 60em) {
+    img {
+    margin-left: 55em;
+    margin-top: 4em;
+    position: absolute;
+    width: 10em;}   
+}

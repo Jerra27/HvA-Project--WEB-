@@ -1,0 +1,557 @@
+        /*overzichts pagina */
+
+@font-face {
+    font-family: 'Transavia_Sans';
+    src: url("./fonts/Nexa_Free_Light-webfont.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Transavia_xbold';
+    src: url("./fonts/Nexa_Free_Bold-webfont.ttf");
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#tijd {
+width: 12em;
+margin-top: 2em;
+    margin-left: 1em;
+}
+
+#tijdnu {
+margin-left: 1em;
+color: #ff3268;
+font-family: 'Transavia_xbold','Roboto'; 
+}
+
+.verwarde {
+font-family: 'Transavia_xbold','Roboto';
+color: #00d66c;
+transition: color 2s ease;
+animation: skew 3s infinite;
+transform: skew(60deg);
+animation-direction: alternate;
+}
+@keyframes skew {
+  0% {
+    transform: skewX(60deg);
+  }
+  100% {
+    transform: skewX(-60deg);
+  }
+}
+
+.verwarde:hover {
+color: #ff3268;
+}
+li {
+    padding: 0.3em;
+    transition: all 1.3s;
+}
+
+li:hover {
+    transform: scale(1.3);
+    color: #00d66c;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+section {
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 90%;
+    background: white;
+    border-radius: 0.75rem;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+h1 {
+    font-family: 'Transavia_xbold', 'Roboto';
+    color: #00d66c;
+    font-size: 1.5em;
+    width: 100%;
+    margin-left: 0.8em;
+    animation-name: bounceIn;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    transform: rotate(1080deg);
+    transition: all 3s;
+}
+
+h2 {
+    font-family: 'Transavia_xbold', 'Roboto';
+    color: #00d66c;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-family: 'Transavia_Sans', 'Roboto';
+    color: #ff3268;
+    font-size: 0.8em;
+}
+
+h4 {
+    font-family: 'Transavia_Sans', 'Roboto';
+    color: #2800a0;
+    font-size: 0.6em;
+}
+
+h6 {
+    font-family: 'Transavia_Sans','Roboto';
+}
+
+p {
+    line-height: 1.5em;
+    font-family: 'Transavia_Sans','Roboto';
+    font-size: 0.8em;
+    color: #606060;
+    letter-spacing: 0.10em;
+    width: 100%;
+    line-height: 1.620em;
+}
+
+img {
+    width: 3em;
+}
+
+select {
+    border: 0;
+    border-radius: 0.75rem;
+    height: 2.5em;
+    width: 7em;
+    font-size: 1em;
+    font-family: "Transavia_xbold",'Roboto';
+    color: #fff;
+    padding: 0 2em 0 1em;
+    background: #ff3268;
+    -webkit-appearance: none;
+    margin-left: 1em
+}
+
+button {
+    padding: 1.0em 1.0em;
+    color: white;
+    background-color: #2800a0;
+    font-family: 'Transavia_xbold','Roboto';
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset 0 -.1875em .0625em #2800a0;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    opacity: 1;
+    transition: all 7s;
+}
+
+button:hover {
+    transition: all 0.9s ease 0s;
+    color: #ff3268;
+    opacity: 0.75;
+}
+
+form {
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+/* ===== child selector ======= */
+
+article > div > img {
+    display: none;
+}
+
+article > div > span > img {
+    max-width: 2em;
+    height: 2em;
+}
+
+header > img {
+    max-width: 100%;
+}
+
+section > h2 {
+    color: #00d66c;
+    font-family: 'Transavia_xbold','Roboto';
+    margin-left: 0.5em;
+    font-size: 2em;
+    left: 2em;
+    top: 9em;
+}
+
+div > a {
+    font-size 20em;
+}
+
+form > select {
+    margin-top: 2em;
+    margin-left: 6em;
+}
+
+header > div {
+    background-color: white;
+    width: 100%;
+}
+
+article > div {
+    height: 100%;
+    width: 100%;
+    padding: 0em 1em 1em 1em;
+}
+
+article > div img {
+    width: 60%;
+    border-radius: 0.75rem;
+}
+
+
+/* ====== class selectors ======= */
+
+.navigation {
+    font-family: 'Transavia_Sans','Roboto';
+    list-style: none;
+    margin: 0;
+    background: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #00d66c;
+    font-size: 1em;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6em;
+    margin-top: 1em;
+    border-top: 1px solid lightgray;
+}
+
+.home {
+    margin: auto;
+    margin-top: 0.3em;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+a.navi {
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+.select {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 2em;
+    color: #00d66c;
+}
+
+.boeren {
+    border-radius: 0.75rem;
+}
+
+.search {
+    padding: 1.0em 1.5em;
+    width: 10em;
+}
+
+.logotransavia {
+    max-width: 8em;
+    max-height: 6em;
+}
+
+.tekst {
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Transavia_xbold', 'Roboto';
+    list-style-type: none;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.title {
+    width: 100%;
+    margin-left: 2em;
+}
+
+.titel {
+    width: 100%;
+}
+
+
+/* ====== font awesome icons ====== */
+
+.fa-search {
+    margin-top: 0.3em;
+    color: #2800a0;
+}
+
+.fa-user {
+    color: #2800a0;
+}
+
+.fa-heart {
+    color: #ff3268;
+}
+
+.fa-retweet {
+    color: #2800a0;
+}
+
+.fa-comment {
+    color: #00d66c;
+}
+
+
+/* ====== hover over link ====== */
+
+a:hover {
+    cursor: pointer;
+    color: #ff3268;
+}
+
+
+/* ===== attribute selectors ====== */
+
+input[type=search] {
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 3em;
+    height: 3em;
+    padding: 1.2em 0.3em 1em 0;
+    text-align: left;
+    border: none;
+    font-family: 'Transavia_xbold','Roboto';
+    width: 40%;
+}
+
+input[type="submit"] {
+    width: 6em;
+    color: white;
+    font-family: 'Transavia_xbold','Roboto';
+    background-color: RGBA(255, 50, 104, 1.00);
+    border: none;
+    padding: 1em;
+    border-radius: 0.75rem;
+}
+
+input:focus {
+    background: #2800a0;
+    transition: background-color 6s ease-in;
+    color: white;
+    opacity: 0.5;
+}
+
+
+/* ====== media queries 35 em min width ====== */
+
+@media only screen and (min-width: 35em) {
+h1 {
+    width: 100%;
+    }
+article {
+    width: 45%;
+    }
+article > div img {
+    width: 100%;
+        height: auto;
+        margin-top: 1em;
+        border-radius: 0.75rem;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 6em;
+    }
+    img {
+        width: 3em;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.75em;
+    }
+    
+    #tijd {
+width: 12em;
+margin-top: 2em;
+    margin-left: 43em;
+}
+   
+    /* ====== media queries min width 42em ======= */
+    @media only screen and (min-width: 42em);
+    h1 {
+        font-size: 2.3em;
+        width: 100%;
+        margin-left: 2em;
+    }
+    h2 {
+        font-size: 2em;
+        font-family: 'Transavia_xbold','Roboto';
+    }
+    article {
+        width: 40%;
+        max-height: 50%;
+        padding-right: 0;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+    img section > h2 {
+        color: #00d66c;
+        font-family: 'Transavia_xbold','Roboto';
+        font-size: 2em;
+    }
+    p {
+        font-family: 'Transavia_Sans','Roboto';
+        font-size: 0.9em;
+    }
+    header > img {
+        width: 100%;
+    }
+    input:focus {
+        background: #2800a0;
+        transition: background-color 4s ease-out;
+        color: white;
+        opacity: 0.3;
+    }
+    select {
+        border: 0;
+        border-radius: 0.75rem;
+        height: 2.5em;
+        width: 7em;
+        font-size: 1em;
+        font-family: "Transavia_xbold",'Roboto';
+        color: #fff;
+        padding: 0 2em 0 1em;
+        background: #ff3268;
+        -webkit-appearance: none;
+        margin-left: 30em;
+        margin-top: 2em;
+    }
+    /* ====== media querie min width 60em ====== */
+    @media only screen and (min-width: 60em) {
+        select {
+            border: 0;
+            border-radius: 0.75rem;
+            height: 2.5em;
+            width: 7em;
+            font-size: 1em;
+            font-family: "Transavia_xbold",'Roboto';
+            color: #fff;
+            padding: 0 2em 0 1em;
+            background: #ff3268;
+            -webkit-appearance: none;
+            margin-left: 70em;
+            margin-top: 2em;
+        }
+        
+          #tijd {
+width: 12em;
+margin-top: 2em;
+    margin-left: 100em;
+}
+   
+        div > h1 {
+            color: #00d66c;
+        }
+        article > div > img {
+            display: block;
+        }
+        .navigation {
+            font-family: 'Transavia_Sans','Roboto';
+            list-style: none;
+            margin: 0;
+            background: white;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .navigation a {
+            text-decoration: none;
+            color: #00d66c;
+            font-size: 1em;
+        }
+        input[type=search] {
+            cursor: pointer;
+            width: 60%;
+            margin-top: 1em;
+            margin-right: 18em;
+            height: 3em;
+            padding: 1em 0 1em 0;
+            text-align: left;
+        }
+        input:focus {
+            background: #2800a0;
+            transition: background-color 6s ease-in;
+            color: white;
+            opacity: 0.5;
+        }
+        article {
+            width: 30%;
+            margin: 1em;
+            box-shadow: 0.250em 0.250em 0.250em #e6e6e6;
+            transition: 0.3s;
+        }
+        article:hover {
+            box-shadow: 1px 2px 70px -20px rgba(0, 0, 0, 1);
+            transform: scale(1.02);
+        }
+        h1 {
+            color: #00d66c;
+            margin-left: 1em;
+        }
+        h2 {
+        font-size: 2.3em;
+        font-family: 'Transavia_xbold','Roboto';
+    }
+        header > img {
+            width: 100%;
+        }
+        section {
+            margin: 0;
+            background-size: 85em 53em;
+            background-color: #f7f7f7;
+        }
+        a {
+            text-decoration: none;
+        }
+        li:hover {
+            color: #ff3268;
+        }

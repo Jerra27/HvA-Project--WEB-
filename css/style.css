@@ -1,0 +1,176 @@
+* {
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Transavia_Sans';
+    src: url("../fonts/Nexa_Free_Light-webfont.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Transavia_xbold';
+    src: url("../fonts/Nexa_Free_Bold-webfont.ttf");
+    font-weight: 600;
+}
+img {
+width: 4em;
+margin-left: 8.5em;
+}
+
+legend {
+    color: #00d66c;
+    font-family: 'Transavia_xbold','Roboto';
+    font-size: 2em;
+    width: 100%;
+}
+.message {
+    font-family: 'Transavia_Sans','Roboto';
+    color: #ff3268;
+}
+
+body {
+    background-image: url(wallp.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+h1 {
+    color: #00D66C;
+    font-family: 'Transavia_xbold','Roboto';
+}
+
+label {
+    color: #2800A0;
+    font-family: 'Transavia_xbold','Roboto';
+}
+
+fieldset {
+    border: none;
+    color: #ff3268;
+    font-family: 'Transavia_xbold','Roboto';
+}
+
+input[type=text] {
+    font-family: 'Transavia_Sans','Roboto';
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 0.75rem;
+   border: .0625rem solid #2800a0;
+}
+
+select {
+    font-family: 'Transavia_Sans','Roboto';
+    outline: 0;
+    background: #fbf7f3;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 0.75rem;
+}
+
+
+input[type=email] {
+    font-family: 'Transavia_Sans','Roboto';
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 0.75rem;
+    border: .0625rem solid #2800a0;
+}
+
+input[type=password] {
+   font-family: 'Transavia_Sans','Roboto';
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 0.75rem;
+    border: .0625rem solid #2800a0;
+}
+
+input:focus {
+    -webkit-transform: scale(1.10, 1.10);
+    transform: scale(1.10, 1.10);
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    border: 0;
+    border-bottom: 3px solid #00d66c;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    background: #f7f7f7;
+}
+
+
+.loginform {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+input[type=submit] {
+    background-color: #ff3368;
+    color: white;
+    font-family: 'Transavia_xbold','Roboto';
+    box-shadow: 0px 3px 0px #ca2b53;
+    width: 11em;
+    height: 3.2em;
+    font-family: "Transavia_xbold";
+    font-size: 1em;
+    margin-right: 1em;
+    text-indent: .3em;
+    outline: none;
+    border-radius: 1.75em;
+    border: 0;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: white;
+    margin: 0 auto 100px;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 0.75rem;
+}
+a:hover {
+    color: #00d66c;
+}
+
+a:focus {
+color: #00d66c;}
+
+
+@media only screen and (min-width: 48em) {
+    img {
+    margin-left: 36em;
+    margin-top: 4em;
+    position: absolute;
+    width: 10em;}   
+}
+
+
+@media only screen and (min-width: 60em) {
+    img {
+    margin-left: 50em;
+    margin-top: 4em;
+    position: absolute;
+    width: 10em;}   
+}
